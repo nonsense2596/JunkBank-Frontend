@@ -1,0 +1,25 @@
+@import './button';
+
+body {
+  font-family: sans-serif;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./img/pie-factory.svg');
+}
+
+h1 {
+  font-size: 4rem;
+  padding: 10px;
+}
+
+img {
+  border-radius: 100%;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  margin-bottom: 40px;
+  border: 5px solid white;
+}
