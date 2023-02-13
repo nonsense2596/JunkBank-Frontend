@@ -106,9 +106,9 @@ const config = {
         viewport: 'width=device-width, initial-scale=1'
       }
     }),
-    new CopyPlugin({
-      patterns: [{ from: './src/img/', to: './img/' }]
-    }),
+    //new CopyPlugin({
+    //  patterns: [{ from: './src/img/', to: './img/' }]
+    //}),
     new MiniCssExtractPlugin()
     // more plugins: https://webpack.js.org/plugins/
   ]

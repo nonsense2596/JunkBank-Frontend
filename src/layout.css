@@ -1,0 +1,162 @@
+body {
+    margin: 0px;
+    padding:0px;
+    background-color: #f5f5f5;
+}
+
+/* ========== navigation bar ========== */
+header {
+    background: linear-gradient(90deg,  rgb(151,87,231) 10%, rgb(49, 195, 233) 140%);
+}
+
+.navbar {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+
+.toggle-button {
+    display: none;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.toggle-button i {
+    vertical-align: middle;
+    line-height: inherit;
+    margin: 2px;
+    color: white;
+    align-self: center;
+    font-size:2em;
+}
+
+.page-logo {
+    color: white;
+    padding-left: 10px;
+    font-size: 2em;
+}
+
+.nav-links {
+    margin-left: auto;
+}
+
+.nav-links ul {
+    list-style-type: none;
+    display: flex;
+}
+.nav-items {
+    padding: 0.5em 1em;
+}
+
+.nav-items a {
+    color: white;
+    text-decoration: none;
+}
+.nav-cart {
+    border: 1px solid white;
+}
+.nav-cart:hover {
+    background: rgba(255,255,255,0.2) !important;
+}
+
+
+@media (max-width: 800px) {
+
+    .navbar {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .nav-links {
+        display:none;
+        width: 100%;
+    }
+
+
+    .toggle-button {
+        display: block;
+    }
+
+
+    .toggle-checkbox:checked ~ .nav-links {
+        display: block;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0;
+        padding-left:0px;
+        width: 100%;
+    }
+
+    .nav-items {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        height: 50px;
+    }
+
+    .nav-items a {
+        height: 3em;
+        width: 100%;
+        padding-left: 10px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+
+}
+
+
+/* ========== footer bar ========== */
+
+footer {
+    background: linear-gradient(90deg,  rgb(151,87,231) 10%, rgb(49, 195, 233) 140%);
+    color: white;
+    padding: 10px;
+}
+
+.footer-content {
+    display: flex;
+}
+
+.footer-row {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-row ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+/* ========== layout helper ========== */
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}

@@ -37,9 +37,9 @@
     "mini-css-extract-plugin": "^2.7.1",
     "node-sass": "^8.0.0",
     "postcss": "^8.4.19",
-    "postcss-scss": "^4.0.6",
     "postcss-loader": "^7.0.2",
     "postcss-preset-env": "^7.8.3",
+    "postcss-scss": "^4.0.6",
     "prettier": "^2.8.0",
     "sass-loader": "^13.2.0",
     "style-loader": "^3.3.1",
@@ -54,5 +54,8 @@
     "webpack-cli": "^5.0.0",
     "webpack-dev-server": "^4.11.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "firebase": "^9.17.1",
+    "font-awesome": "^4.7.0"
+  }
 }

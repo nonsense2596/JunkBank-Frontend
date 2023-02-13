@@ -1,13 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>webpack starterkit</h1>
-    <img src="./img/cube.jpg" alt="" />
-    <button class="custom-btn btn-1"><span>Read More</span></button>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Fuud</title>
+</head>
+<body>
+<header>
+  <div class="navbar container">
+    <input type="checkbox" id="toggle" class="toggle-checkbox">
+    <label for="toggle" id="menu" class="toggle-button">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </label>
+    <a class="page-logo">Fuuud Order</a>
+    <nav class="nav-links">
+      <ul>
+        <li class="nav-items">
+          <a href="#">About us</a>
+        </li>
+        <li class="nav-items">
+          <a href="#">Info</a>
+        </li>
+        <li class="nav-items">
+          <a href="#">Login</a>
+        </li>
+        <li class="nav-items">
+          <a href="#">Sign up</a>
+        </li>
+        <li class="nav-items nav-cart">
+          <a href="#" class="">
+            <span>Cart</span>&nbsp;
+            <span>(1)</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+
+<section class="hero-wrapper">
+  <div class="container">
+    <div class="herobox">
+      <h2>Order food!</h2>
+      <p>We have a wide variety of delicious junk foods!</p>
+    </div>
+  </div>
+</section>
+
+
+
+<main class="container">
+  <section class="food-list-title">
+    <h1>Browse our great selection of foods!</h1>
+  </section>
+  <section>
+    <ul class="food-list"></ul>
+  </section>
+</main>
+
+
+
+<footer>
+  <div class="container footer-content">
+    <div class="footer-row">
+      <h2>Fuud</h2>
+    </div>
+    <nav class="footer-row">
+      <h3>Company</h3>
+      <ul>
+        <li>
+          About Us
+        </li>
+        <li>
+          Careers
+        </li>
+        <li>
+          Investors
+        </li>
+      </ul>
+    </nav>
+    <nav class="footer-row">
+      <h3>Useful links</h3>
+      <ul>
+        <li>
+          Support
+        </li>
+        <li>
+          Fuud blog
+        </li>
+        <li>
+          Privacy Policy
+        </li>
+      </ul>
+    </nav>
+    <nav class="footer-row">
+      <h3>Social</h3>
+      <ul>
+        <li>
+          Facebook
+        </li>
+        <li>
+          Twitter
+        </li>
+        <li>
+          TikTak
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+<div class="backdrop"></div>
+<div class="cart-modal">
+    <div class="cart-modal-content">
+        <ul class="cart-list">
+            <li class="cart-list-item">
+                <div>
+                    <h2>Pizza</h2>
+                    <div>
+                    <span>DKK 70</span>
+                    <span>x 1</span>
+                    </div>
+                </div>
+                <div class="cart-plus-minus">
+                    <button>-</button>
+                    <button>+</button>
+                </div>
+            </li>
+            <li class="cart-list-item">
+                <div>
+                    <h2>Pasta</h2>
+                    <div>
+                    <span>DKK 50</span>
+                    <span>x 2   </span>
+                    </div>
+                </div>
+                <div class="cart-plus-minus">
+                    <button>-</button>
+                    <button>+</button>
+                </div>
+            </li>
+            <li class="cart-list-item">
+                <div>
+                    <h2>Pasta</h2>
+                    <div>
+                    <span>DKK 50</span>
+                    <span>x 2   </span>
+                    </div>
+                </div>
+                <div class="cart-plus-minus">
+                    <button>-</button>
+                    <button>+</button>
+                </div>
+            </li>
+        </ul>
+        <hr>
+        <div class="cart-total">
+            <span>Total Amount</span>
+            <span>DKK 170</span>
+        </div>
+        <hr>
+        <section class="cart-addresses">
+            <h3>Addresses</h3>
+            <label class="radio-container">1111 Budapest, XYZ street 23.
+                <input type="radio" checked="checked" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <label class="radio-container">2222 Budapest, ABC street 12.
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <h3>or add a new address...</h3>
+            <form >
+                <div class="cart-new-address-form">
+                    <input type="text" id="street" name="street" class="cart-new-address-input" placeholder="Street">
+                    <input type="text" id="city" name="city" class="cart-new-address-input" placeholder="City">
+                    <input type="text" id="zip" name="zip" class="cart-new-address-input" placeholder="ZIP">
+                </div>
+                <div class="cart-new-address-submit-wrapper">
+                    <button class="cart-new-address-submit">Add</button>
+                </div>
+            </form>
+        </section>
+        <hr>
+        <section class="cart-action-buttons">
+            <button class="cart-action-submit">Order</button>
+            <button class="cart-action-close">Close</button>
+        </section>
+    </div>
+</div>
+</body>
 </html>
