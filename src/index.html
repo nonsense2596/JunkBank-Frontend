@@ -29,7 +29,7 @@
         <li class="nav-items nav-cart">
           <a href="#" class="">
             <span>Cart</span>&nbsp;
-            <span>(1)</span>
+              (<span id="nav-cart-amount">0</span>)
           </a>
         </li>
       </ul>
@@ -115,72 +115,20 @@
 <div class="backdrop"></div>
 <div class="cart-modal">
     <div class="cart-modal-content">
-        <ul class="cart-list">
-            <li class="cart-list-item">
-                <div>
-                    <h2>Pizza</h2>
-                    <div>
-                    <span>DKK 70</span>
-                    <span>x 1</span>
-                    </div>
-                </div>
-                <div class="cart-plus-minus">
-                    <button>-</button>
-                    <button>+</button>
-                </div>
-            </li>
-            <li class="cart-list-item">
-                <div>
-                    <h2>Pasta</h2>
-                    <div>
-                    <span>DKK 50</span>
-                    <span>x 2   </span>
-                    </div>
-                </div>
-                <div class="cart-plus-minus">
-                    <button>-</button>
-                    <button>+</button>
-                </div>
-            </li>
-            <li class="cart-list-item">
-                <div>
-                    <h2>Pasta</h2>
-                    <div>
-                    <span>DKK 50</span>
-                    <span>x 2   </span>
-                    </div>
-                </div>
-                <div class="cart-plus-minus">
-                    <button>-</button>
-                    <button>+</button>
-                </div>
-            </li>
-        </ul>
+        <ul class="cart-list"></ul>
         <hr>
         <div class="cart-total">
             <span>Total Amount</span>
-            <span>DKK 170</span>
+            <span>EUR <span class="cart-total-amount">0</span></span>
         </div>
         <hr>
         <section class="cart-addresses">
-            <h3>Addresses</h3>
-            <label class="radio-container">1111 Budapest, XYZ street 23.
-                <input type="radio" checked="checked" name="radio">
-                <span class="checkmark"></span>
-            </label>
-            <label class="radio-container">2222 Budapest, ABC street 12.
-                <input type="radio" name="radio">
-                <span class="checkmark"></span>
-            </label>
-            <h3>or add a new address...</h3>
+            <h3>Add a new address...</h3>
             <form >
                 <div class="cart-new-address-form">
                     <input type="text" id="street" name="street" class="cart-new-address-input" placeholder="Street">
                     <input type="text" id="city" name="city" class="cart-new-address-input" placeholder="City">
                     <input type="text" id="zip" name="zip" class="cart-new-address-input" placeholder="ZIP">
-                </div>
-                <div class="cart-new-address-submit-wrapper">
-                    <button class="cart-new-address-submit">Add</button>
                 </div>
             </form>
         </section>
