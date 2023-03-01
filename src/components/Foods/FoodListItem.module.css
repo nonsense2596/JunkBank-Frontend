@@ -1,0 +1,96 @@
+.food-card {
+    margin: 2em;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.food-card div, .food-card form {
+    padding: 0.3em 1em;
+}
+
+.food-card img {
+    object-fit: cover;
+    width: 33%;
+}
+
+.food-card-col {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+.food-card-price {
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+.food-card-col > h2 {
+    margin: 0.5em;
+    font-size: 25px;
+}
+
+.add-to-cart-col
+{
+    align-self: center;
+    text-align: right;
+    flex-grow: 0.4;
+}
+
+.add-to-cart-col input {
+    width: 4em;
+    text-align: center;
+    padding: 0.3rem 0rem 0.3rem 1rem;
+    border: 1px solid rgb(61, 13, 166);
+}
+
+.add-to-cart-button{
+    cursor: pointer;
+    color: white;
+    border: none;
+    background-image: linear-gradient(90deg,  rgb(151,87,231) 10%, rgb(49, 195, 233) 140%);
+    width:3rem;
+    padding: 0.3em;
+    border-radius: 6px;
+    margin-left: 1em;
+}
+
+.add-to-cart-button:hover{
+    background-image: linear-gradient(90deg,  rgb(151,87,231) 40%, rgb(49, 195, 233) 150%);
+}
+
+.add-to-cart-button:active{
+    background-image: linear-gradient(90deg,  rgb(151,87,231) 70%, rgb(49, 195, 233) 170%);
+}
+
+.food-card-col h2 {
+    background: linear-gradient(90deg,  rgb(151,87,231) 10%, rgb(49, 195, 233) 140%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+@media (max-width: 992px) {
+
+    .food-card {
+        flex-direction: column;
+    }
+
+    .food-card div {
+        width: auto;
+    }
+
+    .food-card-col {
+        align-self: auto;
+    }
+
+    .food-card img {
+        width: 100%;
+        max-height: 200px;
+    }
+}
+
+

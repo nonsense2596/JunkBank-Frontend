@@ -1,0 +1,12 @@
+.food-list-title {
+    padding-left: 5em;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.food-list-title > h1 {
+    background: linear-gradient(90deg,  rgb(151,87,231) 10%, rgb(49, 195, 233) 140%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
